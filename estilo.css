@@ -18,8 +18,8 @@ p{
     flex-direction: column;
     text-align: center;
 
-    height: 70%;
-    width: 450px;
+    height: 60%;
+    width: 350px;
 
     animation-duration: 5s;
     animation-name: expandir;
@@ -36,6 +36,6 @@ p{
     }
   
     to {
-        height: 70%;
+        height: 60%;
     }
   }
