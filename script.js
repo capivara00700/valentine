@@ -1,5 +1,6 @@
 let card = document.getElementById("card");
-
+let altura = 0
+let largura = 0
 
 document.querySelector("#yes").addEventListener("click", function () {
   let question = document.getElementById("question");
@@ -11,12 +12,18 @@ document.querySelector("#yes").addEventListener("click", function () {
   message.style.display = "flex";
 });
 
+function tamanhoJogo(){
+  altura = window.innerHeight
+  largura = window.innerWidth
+
+  console.log(altura, largura)
+}
 
 document.querySelector("#no").addEventListener("mouseover", function () {
-  let width = window.innerWidth - 50;
-  let height = window.innerHeight - 50;
+  largura = window.innerWidth - 90;
+  altura = window.innerHeight - 90;
 
   this.style.position = "absolute";
-  this.style.top = Math.random() * width + "px";
-  this.style.left = Math.random() * height + "px";
+  this.style.top = Math.random() * altura + "px";
+  this.style.left = Math.random() * largura + "px";
 });
